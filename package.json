@@ -1,5 +1,5 @@
 {
-  "name": "generator-cmonkey-labs",
+  "name": "generator-monkeyapp",
   "version": "1.0.0",
   "description": "webpack scafolding",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "app"
+    "app",
+    "pages"
   ],
   "keywords": [
     "yeoman-generator",

@@ -1,4 +1,5 @@
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Plugins = require('./config/webpack.plugin');
 const { project } = require('./config/project.config');
@@ -8,9 +9,13 @@ module.exports = (env, options) => {
   let isProd = options.mode === 'production';
   let plugins = Plugins();
 
+  plugins.push(
+    new VueLoaderPlugin()
+  );
+
   return {
     entry: {
-      index: resolve(`src/${project}/index.ts`),
+      index: resolve(`src/${project}/index.js`),
     },
     output: {
       filename: `${project}/js/[name].js`,
