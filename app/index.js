@@ -27,7 +27,7 @@ class WebpackGenerator extends Generator {
      * src folder
      * =============*/
     this.fs.copyTpl(
-      this.templatePath(`src/`),
+      this.templatePath(`general/`),
       this.destinationPath(`${projectname}/src`)
     );
 
