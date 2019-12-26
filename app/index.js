@@ -40,6 +40,14 @@ class WebpackGenerator extends Generator {
     );
 
     /* ==============
+     * ts folder
+     * =============*/
+    this.fs.copyTpl(
+      this.templatePath(`${js}/ts`),
+      this.destinationPath(`${projectname}/src/`)
+    );
+
+    /* ==============
      * config folder
      * =============*/
     this.fs.copyTpl(
