@@ -4,7 +4,8 @@ const ReactPackage = {
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.1",
     "redux": "^4.0.4",
-    "uuid": "^3.3.3"
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -16,6 +17,7 @@ const ReactPackage = {
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
     "@babel/runtime": "^7.6.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-syntax-jsx": "^6.18.0",
@@ -29,6 +31,7 @@ const ReactPackage = {
     "pug-loader": "^2.4.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
+    "typescript": "^3.7.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "file-loader": "^5.0.2",

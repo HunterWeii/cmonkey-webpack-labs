@@ -19,7 +19,7 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.((ts|js)x|js|ts)$/,
           loader: 'babel-loader',
           include: [
             resolve('src'),
@@ -57,7 +57,7 @@ module.exports = (env, options) => {
       alias: {
         "src": resolve(`./src/${project}/app`),
       },
-      extensions: ['*', '.js', '.scss', '.ts']
+      extensions: ['*', '.js', '.scss', '.ts', '.tsx']
     },
 		optimization: {
 			splitChunks: {

@@ -75,7 +75,7 @@ class WebpackGenerator extends Generator {
      * babel.json
      * =============*/
     this.fs.writeJSON(   
-      this.destinationPath(`${projectname}/babel.rc`),
+      this.destinationPath(`${projectname}/.babelrc`),
       babelGenerator(js)
     );
 
